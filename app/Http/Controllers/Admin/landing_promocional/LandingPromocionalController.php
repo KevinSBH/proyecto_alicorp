@@ -241,4 +241,11 @@ class LandingPromocionalController extends Controller
             
         return $totalUltimos7Dias;
     }
+
+    public function personalizarLanding($id) {
+        
+        $project = Project::where('id', $id)
+                            ->first();
+        return view('admin.pages.landing_promocional.personalizarLanding', compact('project'));
+    }
 }

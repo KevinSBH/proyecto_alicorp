@@ -22,4 +22,5 @@
         </div>
     </div>
 </div>
+<livewire:modal-project :pageActual="Route::currentRouteName()" />
 @endsection

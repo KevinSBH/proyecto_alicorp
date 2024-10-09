@@ -17,7 +17,7 @@ class CreateAwardProjectsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('project_id')->nullable();
             $table->foreign('project_id')->references('id')->on('projects');
-            $table->int('orden')->nullable();
+            $table->integer('orden')->nullable();
             $table->string('nombre_premio')->nullable();
             $table->string('stock')->nullable();
             $table->string('probabilidad');

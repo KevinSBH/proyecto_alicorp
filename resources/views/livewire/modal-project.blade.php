@@ -65,11 +65,11 @@
                                     <div class="row">
                                         <div class="col-12 mb-3">
                                             <label for="nombrePromocion" class="form-label">Nombre del promoción</label>
-                                            <input wire:model="nombre_promocion" type="text" id="nombrePromocion" class="form-control form-input-alicorp" placeholder="Escribir">
+                                            <input wire:model="nombre_promocion" name="nombre_promocion" type="text" id="nombrePromocion" class="form-control form-input-alicorp" placeholder="Escribir" required>
                                         </div>
                                         <div class="col-12 mb-3">
                                             <label for="descPromocion" class="form-label">Descripción de la promoción</label>
-                                            <input wire:model="desc_promocion" type="text" id="descPromocion" class="form-control form-input-alicorp" placeholder="Escribir">
+                                            <input wire:model="desc_promocion" type="text" id="descPromocion" name="descPromocion" class="form-control form-input-alicorp" placeholder="Escribir" required>
                                         </div>
                                         <div class="col-12 col-md-6 mb-3" id="selectJuegoContent">
                                             <label for="selectJuego" class="form-label">Seleccionar Juego</label>
@@ -110,7 +110,7 @@
                                 </div>
                                 <div class="btns-group d-flex justify-content-between">
                                     <a href="#" class="btn btn-prev">Atras</a>
-                                    <button type="button" class="btn btn-next" id="next-second">Continuar</button>
+                                    <button type="button" class="btn btn-next btn-info-next" id="next-second">Continuar</button>
                                 </div>
                             </div>
                             <div class="form-step">

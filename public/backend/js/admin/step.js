@@ -7,10 +7,22 @@ const progressSteps = document.querySelectorAll(".progress-step");
 let formStepsNum = 0;
 
 nextBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", async () => {
     formStepsNum++;
-    updateFormSteps();
-    updateProgressbar();
+    if (formStepsNum === 2) {
+      // Validar Formulario
+      const resultado = await validarFormulario();
+      if (resultado === false) {
+        formStepsNum --;
+        return;
+      } else {
+        updateFormSteps();
+        updateProgressbar();
+      }
+    } else {
+      updateFormSteps();
+      updateProgressbar();
+    }
   });
 });
 
@@ -176,4 +188,21 @@ function finishCreate() {
   form_proyecto.classList.add('d-none')
   form_success.classList.remove('d-none')
   form_success.classList.add('d-flex')
+}
+
+const nextInfo = document.querySelector(".btn-info-next");
+
+async function validarFormulario() {
+  
+  const sNamePromocion = document.getElementById("nombrePromocion").value
+  const sDescPromocion = document.getElementById("descPromocion").value
+  const sJuegoPromocion = document.getElementsByName("selectJuego").value
+
+  console.log(sNamePromocion, sDescPromocion)
+  if (!sNamePromocion || !sDescPromocion) {
+    alert("Completar todos los campos del formulario.")
+    return false
+  }
+
+  return true;
 }

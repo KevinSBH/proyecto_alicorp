@@ -16,7 +16,7 @@
             <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
                
                 <li class="nav-item"> 
-                    <a href="{{ route('admin.dashboard') }}" class="nav-link {{ request()->routeIs('admin.dashboard') || request()->routeIs('admin.*.*') ? 'active' : '' }}"> 
+                    <a href="{{ route('admin.dashboard') }}" class="nav-link {{ request()->routeIs('admin.dashboard') || request()->routeIs('admin.dashboard.mio') ? 'active' : '' }}"> 
                         <i class='nav-icon bx bx-home-alt'></i>
                         <p>Inicio</p>
                     </a> 

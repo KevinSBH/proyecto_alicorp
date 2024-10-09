@@ -79,7 +79,7 @@
                             <div class="item-accion">
                                 <span class="title-accion"><b>Acciones</b></span>
                                 <div class="body-accion">
-                                    <button class="btn btn-outline-secondary">Personalizar</button>
+                                    <a href="{{route('landing_promocional.show.personalizarLanding', $project["landing"]->id )}}" class="btn btn-outline-secondary">Personalizar</a>
                                     <button class="btn btn-alicorp">Publicar</button>
                                 </div>
                             </div>

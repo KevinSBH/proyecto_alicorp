@@ -6,8 +6,8 @@
 
 @section('header_center')
 <div class="d-flex">
-  <a href="{{ route('admin.dashboard.juegosWeb') }}" class="btn-proyecto btn-proyectos-left {{ request()->routeIs('admin.dashboard.juegosWeb') ? 'active' : '' }}">Todo los Proyectos</a>
-  <a href="{{ route('admin.dashboard.juegosWeb.mio') }}" class="btn-proyecto btn-proyectos-right {{ request()->routeIs('admin.dashboard.juegosWeb.mio') ? 'active' : '' }}">Mis Proyectos</a>
+  <a href="{{ route('admin.dashboard.juegosCamp') }}" class="btn-proyecto btn-proyectos-left {{ request()->routeIs('admin.dashboard.juegosCamp') ? 'active' : '' }}">Todo los Proyectos</a>
+  <a href="{{ route('admin.dashboard.juegosCamp.mio') }}" class="btn-proyecto btn-proyectos-right {{ request()->routeIs('admin.dashboard.juegosCamp.mio') ? 'active' : '' }}">Mis Proyectos</a>
 </div>
 @endsection
 
@@ -21,4 +21,5 @@
         </div>
     </div>
 </div>
+<livewire:modal-project :pageActual="Route::currentRouteName()" />
 @endsection
