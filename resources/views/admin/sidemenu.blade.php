@@ -45,7 +45,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('admin.dashboard.configuracion')}}" class="waves-effect">
+                        <a href="{{route('dashboard.configuracion')}}" class="waves-effect">
                             <i class="ri-home-gear-line"></i>
                             <span>Configutaración</span>
                         </a>

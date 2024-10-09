@@ -28,7 +28,7 @@
                     </a> 
                 </li>
                 <li class="nav-item"> 
-                    <a href="{{ route('admin.dashboard.configuracion') }}" class="nav-link {{ request()->routeIs('admin.dashboard.configuracion') ? 'active' : '' }}"> 
+                    <a href="{{ route('dashboard.configuracion') }}" class="nav-link {{ request()->routeIs('dashboard.configuracion') ? 'active' : '' }}"> 
                         <i class='nav-icon bx bx-cog'></i>
                         <p>Configuración</p>
                     </a> 
