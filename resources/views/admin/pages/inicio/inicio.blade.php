@@ -69,7 +69,7 @@
                                 <span class="title-accion"><b>Acciones</b></span>
                                 <div class="body-accion">
                                     <a href="{{ route($project->project_type->ruta_name.'.show.configuracion', $project->id ) }}" class="btn btn-outline-secondary" style="font-size: 13px;">Configurar</a>
-                                    <button class="btn btn-outline-secondary" style="font-size: 13px;">Personalizar</button>
+                                    <a href="{{route('landing_promocional.show.personalizarLanding', $project["landing"]->id )}}" class="btn btn-outline-secondary" style="font-size: 13px;">Personalizar</a>
                                     <button class="btn btn-alicorp" style="font-size: 13px;">Publicar</button>
                                 </div>
                             </div>
