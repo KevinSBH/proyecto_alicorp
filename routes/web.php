@@ -64,6 +64,7 @@ Route::prefix('admin')->group(function () {
         Route::get('show/{id}/participantes',[LandingPromocionalController::class, 'participante'])->name('landing_promocional.show.participantes');
         Route::get('show/{id}/ganadores',[LandingPromocionalController::class, 'ganador'])->name('landing_promocional.show.ganadores');
         Route::get('show/{id}/configuracion',[LandingPromocionalController::class, 'configuracion'])->name('landing_promocional.show.configuracion');
+        Route::get('show/{id}/personalizar',[LandingPromocionalController::class, 'configuracion'])->name('landing_promocional.show.personalizarLanding');
     });
 
     Route::prefix('juego_web')->group(function () {
